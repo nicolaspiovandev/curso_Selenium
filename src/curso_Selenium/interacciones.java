@@ -11,13 +11,13 @@ public class interacciones {
 		// TODO Auto-generated method stub
 		
 		//chrome
-		System.setProperty("webdriver.Chrome.driver", "C:\\Users\\Nico\\eclipse-workspace\\Drivers\\chromedriver\\chromedriver.exe");	
-		WebDriver driver_chrome = new ChromeDriver();
+		//System.setProperty("webdriver.Chrome.driver", "C:\\Users\\Nico\\eclipse-workspace\\Drivers\\chromedriver\\chromedriver.exe");	
+		//WebDriver driver_chrome = new ChromeDriver();
 		
-		driver_chrome.get("https://www.amazon.com");
+		//driver_chrome.get("https://www.amazon.com");
 		//send keys 
-		driver_chrome.findElement(By.id("twotabsearchtextbox")).sendKeys("nintendo switch");
-	    driver_chrome.findElement(By.id("nav-search-submit-button")).click();
+		//driver_chrome.findElement(By.id("twotabsearchtextbox")).sendKeys("nintendo switch");
+	    //driver_chrome.findElement(By.id("nav-search-submit-button")).click();
 		//clear
 		//driver_chrome.findElement(By.id("twotabsearchtextbox")).clear();
 		//click()
@@ -34,6 +34,12 @@ public class interacciones {
 		//send keys 
 		driver_firefox.findElement(By.id("twotabsearchtextbox")).sendKeys("nintendo switch");
 	    driver_firefox.findElement(By.id("nav-search-submit-button")).click();
+	    driver_firefox.findElement(By.className("s-image")).click();
+	    driver_firefox.findElement(By.id("buy-now-button")).click();
+		driver_firefox.findElement(By.id("ap_email")).sendKeys("nicolaspiovan5@gmail.com");
+	    driver_firefox.findElement(By.id("continue")).click();
+		driver_firefox.findElement(By.id("ap_password")).sendKeys("La12esloma");
+	    driver_firefox.findElement(By.id("signInSubmit")).click();
 		//clear
 		//driver_firefox.findElement(By.id("twotabsearchtextbox")).clear();
 		//click()
@@ -45,10 +51,10 @@ public class interacciones {
 		//System.setProperty("webdriver.edge.driver", "C:\\Users\\Nico\\eclipse-workspace\\Drivers\\msedgedriver\\msedgedriver.exe");	
 		//WebDriver driver_edge = new EdgeDriver();
 		
-		driver_edge.get("https://www.amazon.com");
+		//driver_edge.get("https://www.amazon.com");
 		//send keys 
-		driver_edge.findElement(By.id("twotabsearchtextbox")).sendKeys("nintendo switch");
-	    driver_edge.findElement(By.id("nav-search-submit-button")).click();
+		//driver_edge.findElement(By.id("twotabsearchtextbox")).sendKeys("nintendo switch");
+	    //driver_edge.findElement(By.id("nav-search-submit-button")).click();
 		//clear
 		//driver_edge.findElement(By.id("twotabsearchtextbox")).clear();
 		//click()
